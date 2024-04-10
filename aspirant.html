@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="/styles/aspirant.css">
+    <title>Aspirant</title>
+</head>
+<body>
+    <header>
+        <!-- The uniben Logo -->
+        <div class="uniben">
+            <img class="logo logburg" src="images/uniben_circle-logo-modified.png" alt="uniben school Logo">
+        </div>
+        
+        <!-- The Navigation space  -->
+
+        <nav id="nav_card" data-visible="false">
+            <div class="hr"><hr></div>
+            <div class="split">
+                <div class="navsect">
+                    <h1>GREAT<br>UNIBEN</h1>
+                    <!-- <hr> -->
+                </div>
+                <div class="list_flex">
+                    <img src="/images/arrow-change-svgrepo-com (2).svg" alt=""><li><a href="#">Change Level</a></li>
+                </div>
+                <div class="list_flex">
+                    <img src="/images/comment-svgrepo-com.svg" alt=""><li><a href="#">Contact us</a></li>
+                </div>
+                <div class="list_flex">
+                    <img src="/images/about-description-help-svgrepo-com.svg" alt=""><li><a href="#">About</a></li>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- The Nav toggle button  -->
+
+        <button 
+        id="button_click"
+        class="ham_menu" aria-controls="nav_card" aria-expanded="false">
+            <span class="sr_only">Menu</span>
+        </button>
+    </header>
+    
+    <!-- The header section ends -->
+
+    <!-- The main container -->
+    
+    <div class="container">
+        <h1 class="hello_sect">Welcome <span id="userName">user</span></h1>
+        <div class="sect">
+            <h3> Choosing<br>a school is a Journey.</h3>
+            <h2>The Ultimate Guide:</h2>
+            <img class="rdmp" src="images/Roadmap.png" alt="A picture of a roadmap">
+            <p class="img_capt" style="font-size: 12px; color:rgb(5, 5, 5); font-style: italic;">Providing a detailed step by step guide through your admission processing.</p>
+            <div class="flex">
+                <button id="getStarted">Get Started</button>
+            </div>
+        </div>
+    </div>
+    <!-- Container ends -->
+    <script src="/script/script.js"></script>
+</body>
+</html>

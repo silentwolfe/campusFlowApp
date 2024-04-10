@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/first_page.css">
+    <title>My App</title>
+</head>
+<body>
+    <!-- The First page logo section -->
+    <div class="logo-container">
+        <div class="opening-content">
+            <img class="opening_logo_img" src="images/graduate-cap-svgrepo-com (1).svg" alt="My Logo">
+            <h1 class="uniben_h1-logo">UNIBEN</h1>
+            <p class="uniben_p-logo">GREAT UNIBEN</p>
+        </div>
+    </div>
+    <!-- Logo section Ends -->
+    <section>
+        <div class="main">
+            <input type="checkbox" id="chk" name="check" aria-hidden="true">
+
+            <div class="signup">
+                <form>
+                    <label for="chk" aria-hidden="true" class="signup-label">Sign up</label>
+                    <div class="input-container">
+                        <input type="text" name="txt" id="username" class="form-input has-content" placeholder=" " required>
+                        <label for="username" class="form-label text">username</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="email" name="email" id="email" class="form-input has-content" placeholder=" " required>
+                        <label for="email" class="form-label email">Email</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="password" name="password" id="password" class="form-input has-content" placeholder=" " required>
+                        <label for="password" class="form-label password">Password</label>
+                    </div>
+                    <button>Sign up</button>`
+                </form>
+
+            </div>
+
+            <div class="login">
+                <form action="">
+                    <label for="chk" aria-hidden="true" class="signup-label">Login</label>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="password" name="Password" id="" placeholder="Password" required>
+                    <button>Login</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="/script/script.js"></script>
+</body>
+</html>
