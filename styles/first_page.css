@@ -61,20 +61,19 @@ section {
     cursor: pointer;
     transition: .5s ease-in-out;
 }
-
-input {
-    width: 60%;
-    height: 20px;
-    background-color: aliceblue;
-    justify-content: center;
+.input_cont {
     display: flex;
-    margin: 20px auto;
-    padding: 10px;
-    border: none;
-    outline: none;
-    border-radius: 5px;
+    flex-direction: column;
+    gap: .5rem;
+    margin: 0 7%;
 }
-
+.input_label {
+    color: white;
+}
+.form-input {
+    padding:  10px  10px;
+    border-radius: 13px;
+}
 button {
     width: 60%;
     height: 40px;
@@ -110,10 +109,20 @@ button:hover {
     color: rgb(37, 30, 51);
     transform: scale(.6);
 }
+.login-info_sect {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin: 0 7%;
+}
 .login input {
     background-color: #0a0a23;
-    height: 40px;
-    color: white;
+    /* height: 40px; */
+    color: rgba(255, 255, 255, 0.671);
+    font-size: 13px;
+    padding: 15px 10px;
+    border-radius: 13px;
+    border: 2px solid #78787a;
 }
 
 #chk:checked ~ .login {
@@ -125,53 +134,4 @@ button:hover {
 }
 #chk:checked ~ .signup .signup-label {
     transform: scale(.6);
-}
-.form-input {
-    /* width: 100%; */
-    /* padding: 10px; */
-    border: none;
-    font-size: 0.78rem;
-    border-bottom: 1px solid #ccc;
-    outline: none;
-    transition: border-color 0.3s;
-}
-
-.form-label {
-    position: absolute;
-    left: 80px;
-    font-size: 0.8125rem;
-    color: #faf9f9;
-    font-family: 'Courier New';
-    pointer-events: none;
-    color: #181616;
-    transition: top 0.3s, font-size 0.3s;
-}
-.text {
-    top: 6.58rem;
-}
-.email {
-    top: 9rem;
-}
-.password {
-    top: 11.8rem;
-}
-
-.form-input:focus + .text,
-.form-input:not(:placeholder-shown) + .text,
-.form-input.has-content + .text {
-    top: 5.3rem;
-    font-size: 0.75rem;
-    color: #feac32;
-}
-.form-input:focus + .password,
-.form-input:not(:placeholder-shown) + .password,
-.form-input.has-content + .password {
-    color: #feac32;
-    top: 10.5rem;
-}
-.form-input:focus + .email,
-.form-input:not(:placeholder-shown) + .email,
-.form-input.has-content + .email {
-    top: 8rem;
-    color: #feac32;
 }
