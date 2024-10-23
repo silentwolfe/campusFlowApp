@@ -84,6 +84,7 @@ header .logburg {
     z-index: 10000;
     width: 2rem;
     aspect-ratio: 1;
+    cursor: pointer;
 
     background: url(images/hamburger-menu.svg);
     background-size: cover;
@@ -130,6 +131,7 @@ header .logburg {
     margin-top: 8rem;
     padding: 10px;
     font-size: .9rem;
+    cursor: pointer;
     color: #dbd9d7;
     text-shadow: 1px 1px 1px black;
     transition: .1s ease-in;
